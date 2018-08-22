@@ -4,4 +4,7 @@ $(function() {
     this.suit = suit;
     this.value = value;
   }
+  var deck = [
+    new card('Two', 'Clubs', 2)
+  ]
 });
