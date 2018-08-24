@@ -14,6 +14,9 @@ $(function() {
     new card ('Eight', 'Clubs', 8),
     new card ('Nine', 'Clubs', 9),
     new card ('Ten', 'Clubs', 10),
-    new card ('Jack', 'Clubs', 11)
+    new card ('Jack', 'Clubs', 10),
+    new card ('Queen', 'Clubs', 10),
+    new card ('King', 'Clubs', 10),
+    new card ('Ace', 'Clubs', 11)
   ]
 });
