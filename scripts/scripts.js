@@ -5,6 +5,15 @@ $(function() {
     this.value = value;
   }
   var deck = [
-    new card('Two', 'Clubs', 2)
+    new card ('Two', 'Clubs', 2),
+    new card ('Three', 'Clubs', 3),
+    new card ('Four', 'Clubs', 4),
+    new card ('Five', 'Clubs', 5),
+    new card ('Six', 'Clubs', 6),
+    new card ('Seven', 'Clubs', 7),
+    new card ('Eight', 'Clubs', 8),
+    new card ('Nine', 'Clubs', 9),
+    new card ('Ten', 'Clubs', 10),
+    new card ('Jack', 'Clubs', 11)
   ]
 });
