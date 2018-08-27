@@ -18,6 +18,8 @@ $(function() {
     new card ('Queen', 'Clubs', 10),
     new card ('King', 'Clubs', 10),
     new card ('Ace', 'Clubs', 11),
-    new card ('Two', 'Spades', 2)
+    new card ('Two', 'Spades', 2),
+    new card ('Three', 'Spades', 3),
+    new card ('Four', 'Spaces', 4)
   ]
 });
