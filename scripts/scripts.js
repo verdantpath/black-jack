@@ -20,6 +20,7 @@ $(function() {
     new card ('Ace', 'Clubs', 11),
     new card ('Two', 'Spades', 2),
     new card ('Three', 'Spades', 3),
-    new card ('Four', 'Spaces', 4)
+    new card ('Four', 'Spades', 4),
+    new card ('Five', 'Spades', 5),
   ]
 });
