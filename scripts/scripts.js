@@ -22,6 +22,7 @@ $(function() {
     new card ('Three', 'Spades', 3),
     new card ('Four', 'Spades', 4),
     new card ('Five', 'Spades', 5),
-    new card ('Six', 'Spades', 6)
+    new card ('Six', 'Spades', 6),
+    new card ('Seven', 'Spades', 7)
   ]
 });
