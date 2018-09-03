@@ -24,6 +24,11 @@ $(function() {
     new card('Five', 'Spades', 5),
     new card('Six', 'Spades', 6),
     new card('Seven', 'Spades', 7),
-    new card('Eight', 'Spades', 8)
+    new card('Eight', 'Spades', 8),
+    new card('Nine', 'Spades', 9),
+    new card('Ten', 'Spades', 10),
+    new card('Jack', 'Spades', 10),
+    new card('Queen', 'Spades', 10),
+    new card('King', 'Spades', 10),
   ]
 });
