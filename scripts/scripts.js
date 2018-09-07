@@ -56,6 +56,6 @@ $(function() {
     new card('Jack', 'Diamonds', 10),
     new card('Queen', 'Diamonds', 10),
     new card('King', 'Diamonds', 10),
-    new card('Ace', 'Diamonds', 11),
+    new card('Ace', 'Diamonds', 11)
   ]
 });
