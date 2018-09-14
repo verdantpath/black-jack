@@ -1,4 +1,5 @@
 $(function() {
+  // create the card
   function card( name, suit, value ) {
     this.name = name;
     this.suit = suit;
