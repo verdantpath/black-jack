@@ -5,6 +5,7 @@ $(function() {
     this.suit = suit;
     this.value = value;
   }
+  // build the deck of cards
   var deck = [
     new card('Two', 'Clubs', 2),
     new card('Three', 'Clubs', 3),
