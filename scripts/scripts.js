@@ -3,9 +3,9 @@ $(function() {
   function card( name, suit, value ) {
     this.name = name;
     this.suit = suit;
-    this.value = value;
+    this.value = value; 
   }
-  // build the deck of cards and assign them values 
+  // build the deck of cards and assign them values
   var deck = [
     new card('Two', 'Clubs', 2),
     new card('Three', 'Clubs', 3),
