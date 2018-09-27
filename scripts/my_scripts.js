@@ -3,7 +3,7 @@ $(function() {
   function card( name, suit, value ) {
     this.name = name;
     this.suit = suit;
-    this.value = value; 
+    this.value = value;
   }
   // build the deck of cards and assign them values
   var deck = [
@@ -61,3 +61,14 @@ $(function() {
     new card('Ace', 'Diamonds', 11)
   ]
 });
+
+var used_cards = new Array();
+function deal() {
+  for(var i = 0; i < 2; i++;) {
+    hit();
+  }
+}
+function getRandom(num) {
+  var my_num = Math.floor(Math.random() * num);
+  return my_num;
+}
