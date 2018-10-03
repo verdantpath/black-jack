@@ -61,6 +61,17 @@ $(function() {
     new card('Ace', 'Diamonds', 11)
   ]
 
+  var hand = {
+    cards: new Array(),
+    current_total: 0,
+    sumCardTotal: function() {
+      this.current_total = 0;
+      for ( var i = 0; i < this.cards.length; i++ ) {
+        this.current_total = this.current_total + this.cards[i].value;
+      }
+      $('#hdrTotal').append(this.current_total);
+    }
+  }
 
   // create an array to hold the used cards
   var used_cards = new Array();
