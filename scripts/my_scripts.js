@@ -70,8 +70,20 @@ $(function() {
         this.current_total = this.current_total + this.cards[i].value; //might need to alter this
       }
       $('#hdrTotal').append(this.current_total);
+      if (this.current_total > 21) {
+        $('#btnStick').trigger('click');
+        $('#hdrResult').html('BUST!');
+      } else if (this.current_total == 21) {
+        $('#btnStick').trigger('click');
+        $('#hdrResult').html('BlackJack!');
+      } else if (this.current_total < 21 || this.cards.length == 5) {
+        $('#btnStick').trigger('click');
+        $('#hdrResult').html('5 card trick');
+      } else {
+        // keep playing
+      }
     }
-  }
+  };
 
   // create an array to hold the used cards
   var used_cards = new Array();
