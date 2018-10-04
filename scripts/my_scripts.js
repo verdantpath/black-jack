@@ -76,7 +76,7 @@ $(function() {
       } else if (this.current_total == 21) {
         $('#btnStick').trigger('click');
         $('#hdrResult').html('BlackJack!');
-      } else if (this.current_total < 21 || this.cards.length == 5) {
+      } else if (this.current_total <= 21 && this.cards.length == 5) {
         $('#btnStick').trigger('click');
         $('#hdrResult').html('5 card trick');
       } else {
