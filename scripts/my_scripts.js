@@ -67,7 +67,7 @@ $(function() {
     sumCardTotal: function() {
       this.current_total = 0;
       for ( var i = 0; i < this.cards.length; i++ ) {
-        this.current_total = this.current_total + this.cards[i].value;
+        this.current_total = this.current_total + this.cards[i].value; //might need to alter this
       }
       $('#hdrTotal').append(this.current_total);
     }
