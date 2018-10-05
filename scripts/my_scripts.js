@@ -106,7 +106,7 @@ $(function() {
         good_card = true;
         var c = deck[index];
         used_cards[used_cards.length] = index;
-        //hand.cards[hand.cards.length] = c;
+        hand.cards[hand.cards.length] = c;
         var $d = $("<div>");
         $d.addClass("current_hand").appendTo("#my_hand");
         $('<img>').appendTo($d).attr("src", 'images/cards/' + c.suit + '/' + c.name + '.jpg').fadeOut('slow').fadeIn('slow');
