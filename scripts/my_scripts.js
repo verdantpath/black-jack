@@ -121,6 +121,11 @@ $(function() {
     $('#btnHit').toggle();
     $('#btnStick').toggle();
   });
-  
+  $('#btnHit').click(function() {
+    hit();
+  });
+  $('#btnStick').click(function() {
+    $('#hdrResult').html('Stick!');
+  });
 
 });
