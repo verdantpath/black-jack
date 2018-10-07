@@ -101,12 +101,12 @@ $(function() {
   function hit() {
     var good_card = false;
     do {
-      var index = getRandom(52);
+      var index = getRandom(52); // 5
       if ( !$.inArray(index, used_cards) > -1 ) {
         good_card = true;
-        var c = deck[index];
-        used_cards[used_cards.length] = index;
-        hand.cards[hand.cards.length] = c;
+        var c = deck[index]; // card {7, clubs, 7}
+        used_cards[used_cards.length] = index; // used_cards[0] = 5
+        hand.cards[hand.cards.length] = c; // hand.cards[0] = card {7, clubs,7}
         var $d = $("<div>");
         $d.addClass("current_hand").appendTo("#my_hand");
         $('<img>').appendTo($d).attr("src", 'images/cards/' + c.suit + '/' + c.name + '.jpg').fadeOut('slow').fadeIn('slow');
