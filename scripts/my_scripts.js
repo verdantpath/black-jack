@@ -72,18 +72,28 @@ $(function() {
       $('#hdrTotal').append(this.current_total);
       if (this.current_total > 21) {
         $('#btnStick').trigger('click');
-        $('#hdrResult').html('BUST!');
+        $('#imgResult').attr('src', 'images/x2.png');
+        $('#hdrResult').html('BUST!').attr('class', 'lose');
       } else if (this.current_total == 21) {
         $('#btnStick').trigger('click');
-        $('#hdrResult').html('BlackJack!');
+        $('#imgResult').attr('src', 'images/check.png');
+        $('#hdrResult').html('BlackJack!').attr('class', 'win');
       } else if (this.current_total <= 21 && this.cards.length == 5) {
         $('#btnStick').trigger('click');
-        $('#hdrResult').html('5 card trick');
+        $('#imgResult').attr('src', 'images/check.png');
+        $('#hdrResult').html('5 card trick').attr('class', 'win');
       } else {
         // keep playing
       }
+      $('#hdrTotal').html("Total: " + this.current_total);
     }
   };
+
+  function end() {
+    $('#btnHit').toggle();
+    $('#btnStick').toggle();
+    $('#btnRestart').toggle();
+  }
 
   // create an array to hold the used cards
   var used_cards = new Array();
@@ -125,7 +135,9 @@ $(function() {
     hit();
   });
   $('#btnStick').click(function() {
-    $('#hdrResult').html('Stick!');
+    $('#hdrResult').html('Stick!').attr('class', 'win');
+    $('#result').toggle();
+    end();
   });
   $('#btnRestart').click( function() {
     $('#result').toggle();
