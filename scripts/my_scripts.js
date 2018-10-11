@@ -69,7 +69,7 @@ $(function() {
       for ( var i = 0; i < this.cards.length; i++ ) {
         this.current_total = this.current_total + this.cards[i].value; //might need to alter this
       }
-      $('#hdrTotal').append(this.current_total);
+      $('#hdrTotal').html("Total: " + this.current_total);
       if (this.current_total > 21) {
         $('#btnStick').trigger('click');
         $('#imgResult').attr('src', 'images/x2.png');
