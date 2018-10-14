@@ -85,6 +85,7 @@ $(function() {
       } else {
         // keep playing
       }
+      
       $('#hdrTotal').html("Total: " + this.current_total);
     }
   };
