@@ -85,7 +85,7 @@ $(function() {
       } else {
         // keep playing
       }
-      
+
       $('#hdrTotal').html("Total: " + this.current_total);
     }
   };
@@ -126,6 +126,7 @@ $(function() {
     good_card = false;
     hand.sumCardTotal();
   }
+  
   $("#btnDeal").click(function() {
     deal();
     $(this).toggle();
