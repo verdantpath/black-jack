@@ -126,13 +126,14 @@ $(function() {
     good_card = false;
     hand.sumCardTotal();
   }
-  
+
   $("#btnDeal").click(function() {
     deal();
     $(this).toggle();
     $('#btnHit').toggle();
     $('#btnStick').toggle();
   });
+  
   $('#btnHit').click(function() {
     hit();
   });
