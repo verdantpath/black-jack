@@ -137,12 +137,13 @@ $(function() {
   $('#btnHit').click(function() {
     hit();
   });
-  
+
   $('#btnStick').click(function() {
     $('#hdrResult').html('Stick!').attr('class', 'win');
     $('#result').toggle();
     end();
   });
+  
   $('#btnRestart').click( function() {
     $('#result').toggle();
     $(this).toggle;
