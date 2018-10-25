@@ -143,7 +143,7 @@ $(function() {
     $('#result').toggle();
     end();
   });
-  
+
   $('#btnRestart').click( function() {
     $('#result').toggle();
     $(this).toggle;
@@ -154,6 +154,7 @@ $(function() {
     hand.current_total = 0;
 
     $('#btnDeal').toggle().trigger('click');
+    
   });
 
 });
