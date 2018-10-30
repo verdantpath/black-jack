@@ -5,6 +5,7 @@ $(function() {
     this.suit = suit;
     this.value = value;
   }
+  
   // build the deck of cards and assign them values
   var deck = [
     new card('Two', 'Clubs', 2),
@@ -160,13 +161,13 @@ $(function() {
     $('#myHand').empty();
     $('#hdrResult').html('');
     $('#imgResult').attr('src', 'images/check.png');
-    
+
     used_cards.length = 0;
     hand.cards.length = 0;
     hand.current_total = 0;
 
     $('#btnDeal').toggle().trigger('click');
-    
+
   });
 
 });
