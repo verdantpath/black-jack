@@ -5,7 +5,7 @@ $(function() {
     this.suit = suit;
     this.value = value;
   }
-  
+
   // build the deck of cards and assign them values
   var deck = [
     new card('Two', 'Clubs', 2),
@@ -65,6 +65,7 @@ $(function() {
   var hand = {
     cards: new Array(),
     current_total: 0,
+    
     sumCardTotal: function() {
       this.current_total = 0;
       for ( var i = 0; i < this.cards.length; i++ ) {
